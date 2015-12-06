@@ -1,4 +1,5 @@
 package linklist;
+import java.util.PriorityQueue;
 
 /**
  * Created by VGN on 12/5/15.
@@ -241,5 +242,53 @@ public class Solution {
         node.val = value;
         //remove the next node
         node.next = node.next.next;
+    }
+
+    /*Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.*/
+    public ListNode mergeKLists(ListNode[] lists) {
+        //complexity is k*n ( n is size of each list)
+        //k*n log (n*k)
+        if (lists.length == 0){
+            return null;
+        }
+        PriorityQueue<Integer> pq = new PriorityQueue<Integer>();
+        boolean isNull = false;
+        //check for no null elements added to list
+        while (!isNull){
+            isNull = true;
+            ListNode[] updatedLists = new ListNode[lists.length];
+            for (int i=0; i < lists.length; i++){
+                //insert the first item of each list into pq
+                ListNode node = lists[i];
+                if (node != null){
+                    pq.add(node.val);
+                    updatedLists[i] = node.next;
+                    isNull = false;
+                }
+            }
+            lists = updatedLists;
+        }
+        //store results from priority queue in sortedArray
+        int[] sortedArray = new int[pq.size()];
+        int counter = 0;
+        //complexity is n*k log(n*k)
+        while (!pq.isEmpty()){
+           sortedArray[counter++] = pq.remove();
+        }
+        ListNode first = null;
+        ListNode prevNode = null;
+        //convert sorted array into list list
+        //complexity is n
+        for(int i= 0; i< sortedArray.length; i++){
+            ListNode  node = new ListNode((sortedArray[i]));
+            if (first == null){
+                first = node;
+            }
+            if (prevNode != null){
+                prevNode.next = node;
+            }
+            prevNode = node;
+        }
+        return first;
     }
 }
