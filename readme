@@ -21,6 +21,7 @@ Leetcode Problems solved.
 151:Reverse Words in a String
 155:Min Stack
 199:Binary Tree Right Side View
+200:Number of Islands
 203:Remove Linked List Elements
 206:Reverse Linked List
 207:Course Schedule
@@ -30,4 +31,7 @@ Leetcode Problems solved.
 232:Implement Queue using Stacks
 237:Delete Node in a Linked List
 242:Valid Anagram
+261:Graph Valid Tree
 295:Find Median from Data Stream
+305:Number of Islands II
+323:Number of Connected Components in an Undirected Graph 
