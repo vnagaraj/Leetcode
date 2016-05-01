@@ -2,13 +2,17 @@ Leetcode Problems solved.
 001:Two Sum
 014:Longest Common Prefix
 015:3Sum
-034:Search for a Range
+021:Merge Two Sorted Lists
 023:Merge k Sorted Lists
+026:Remove Duplicates from Sorted Array
+034:Search for a Range
 049:Group Anagrams
 056:Merge Intervals
 058:Length of Last Word
 067:Add Binary
+074:Search a 2D Matrix
 075:Sort Colors
+088:Merge Sorted Array
 098:Validate Binary Search Tree
 102:Binary Tree Level Order Traversal
 103:Binary Tree Zigzag Level Order Traversal
@@ -19,7 +23,9 @@ Leetcode Problems solved.
 142:Linked List Cycle II
 146:LRU Cache
 147:Insertion Sort List
+150:Evaluate Reverse Polish Notation
 151:Reverse Words in a String
+153:Find Minimum in Rotated Sorted Array
 155:Min Stack
 199:Binary Tree Right Side View
 200:Number of Islands
@@ -31,6 +37,7 @@ Leetcode Problems solved.
 225:Implement Stack using Queues
 232:Implement Queue using Stacks
 237:Delete Node in a Linked List
+240:Search a 2D Matrix II
 242:Valid Anagram
 261:Graph Valid Tree
 295:Find Median from Data Stream
